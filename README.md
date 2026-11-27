@@ -1,8 +1,8 @@
 # ORD Flight Delay Analysis
 
-This notebook explores gate-departure delays at Chicago O’Hare using Bureau of Transportation Statistics records from January 2023 through May 2026. It looks at departure hours, seasons, airline networks, destinations, taxi-out times, and reported delay reasons.
+This notebook explores gate-departure delays at Chicago O’Hare using [BTS Detailed Statistics Departures](https://www.transtats.bts.gov/ontime/Departures.aspx). The dataset covers **U.S. domestic departures from ORD only**, with no international flights, from January 2023 through May 2026. It looks at departure hours, seasons, airline networks, destinations, taxi-out times, and reported delay reasons.
 
-[Read the main EDA notebook](ord_departure_reliability_eda.ipynb) — all tables and 14 charts are already rendered. The [cleaning notebook](ord_data_cleaning.ipynb) shows the BTS schema fixes and how the analysis sample was selected.
+[Read the main EDA notebook](ord_departure_reliability_eda.ipynb). The [cleaning notebook](ord_data_cleaning.ipynb) shows the BTS schema fixes and how the analysis sample was selected.
 
 | Measure | Result |
 |---|---:|
@@ -20,6 +20,6 @@ Delay rates rise from 9.91% at 06:00–06:59 to 37.83% at 22:00–22:59.
 
 Late aircraft account for the largest share of reported arrival-delay minutes on ORD-origin flights.
 
-To rerun, install `requirements.txt` and set the local data paths in the notebooks. Parquet files stay outside the repository; 2026 covers January–May only.
+To rerun, install `requirements.txt` and use the paths at the top of each notebook. Parquet files stay outside the repository; 2026 covers January–May only.
 
-Giang Bui · Former air traffic controller transitioning into data science · [GPL-3.0](LICENSE)
+By Giang Bui, a former air traffic controller transitioning into data science. [GPL-3.0](LICENSE).
